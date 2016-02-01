@@ -1,0 +1,47 @@
+
+/*by style david criollo*/
+
+.orange {
+    color: #ff892a!important;
+}
+.green{
+    color: #69aa46!important;
+}
+.pink {
+    color: #c6699f!important;
+}
+.blue {
+    color: #478fca!important;
+}
+.grey {
+    color: #777!important;
+}
+
+.red {
+    color: #dd5a43!important;
+}
+
+.purple{
+	color: #9585bf!important;
+}
+
+
+/*color validation*/
+
+.form-group.has-error .control-label, .form-group.has-error .help-block, .form-group.has-error .help-inline {
+    color: #d16e6c;
+}
+
+.has-error .input-group-addon {
+    color: #d16e6c;
+    background-color: #f2dede;
+    border-color: #d16e6c;
+}
+
+.has-error .form-control-feedback {
+    color: #d16e6c;
+}
+
+.has-error .input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child>.btn-group:not(:first-child)>.btn, .input-group-btn:first-child>.btn:not(:first-child), .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group>.btn, .input-group-btn:last-child>.dropdown-toggle {
+    border-color: #d16e6c;
+}
