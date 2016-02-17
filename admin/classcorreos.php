@@ -115,7 +115,7 @@
 					<table class="table-row" style="table-layout: auto; padding-right: 24px; padding-left: 24px; width: 600px; background-color: #ffffff;" bgcolor="#FFFFFF" width="600" cellspacing="0" cellpadding="0" border="0"><tbody><tr height="55px" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; height: 55px;">
 					   <td class="table-row-td" style="height: 55px; padding-right: 16px; font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; vertical-align: middle;" valign="middle" align="left">
 					     <a href="#" style="color: #428bca; text-decoration: none; padding: 0px; font-size: 18px; line-height: 20px; height: 50px; background-color: transparent;">
-						 	empresa.nextbook.ec
+						 	promoda.ec
 						 </a>
 					   </td>
 					 
@@ -188,7 +188,7 @@
 							&nbsp;|&nbsp;
 							<a href="http://www.nextbook.ec/info.html" style="color: #428bca; text-decoration: none; background-color: transparent;">nextbook.ec</a>
 							&nbsp;|&nbsp;
-							<a href="http://www.empresa.nextbook.ec" style="color: #428bca; text-decoration: none; background-color: transparent;">empresa.nextbook.ec</a>
+							<a href="http://www.promoda.ec" style="color: #428bca; text-decoration: none; background-color: transparent;">promoda.ec</a>
 						 </div>
 						 <table class="table-space" height="16" style="height: 16px; font-size: 0px; line-height: 0; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-space-td" valign="middle" height="16" style="height: 16px; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" align="left">&nbsp;</td></tr></tbody></table>
 					 </td></tr></tbody></table>
@@ -319,7 +319,7 @@
 							<table class="table-row" style="table-layout: auto; padding-right: 24px; padding-left: 24px; width: 600px; background-color: #ffffff;" bgcolor="#FFFFFF" width="600" cellspacing="0" cellpadding="0" border="0"><tbody><tr height="55px" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; height: 55px;">
 							   <td class="table-row-td" style="height: 55px; padding-right: 16px; font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; vertical-align: middle;" valign="middle" align="left">
 							     <a href="#" style="color: #428bca; text-decoration: none; padding: 0px; font-size: 18px; line-height: 20px; height: 50px; background-color: transparent;">
-								 	empresa.nextbook.ec
+								 	promoda.ec
 								 </a>
 							   </td>
 							 
@@ -358,7 +358,7 @@
 							<table class="table-row" width="600" bgcolor="#FFFFFF" style="table-layout: fixed; background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-row-td" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 36px; padding-right: 36px;" valign="top" align="left">
 							   <table class="table-col" align="left" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="table-col-td" width="528" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal;" valign="top" align="left">
 								 <table width="100%" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td width="100%" bgcolor="#d9edf7" style="font-family: Arial, sans-serif; line-height: 19px; color: #31708f; font-size: 14px; font-weight: normal; padding: 15px; border: 1px solid #bce8f1; background-color: #d9edf7;" valign="top" align="left">
-								    <p>Usuario: '.$ruc.'@facturanext.com</p>
+								    <p>Usuario: '.$ruc.'</p>
 									<p>Clave acceso: '.$passwor.'</p>
 
 								   <br>
@@ -372,8 +372,7 @@
 							<table class="table-row" width="600" bgcolor="#FFFFFF" style="table-layout: fixed; background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-row-td" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 36px; padding-right: 36px;" valign="top" align="left">
 							   <table class="table-col" align="left" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="table-col-td" width="528" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal;" valign="top" align="left">
 								 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-size: 20px; margin: 0px; font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #478fca; padding-bottom: 10px; padding-top: 15px;" valign="top" align="center">
-								 	Solicite a todos los establecimientos o proveedores a los que compras, envíen tus facturas electrónicas a este correo o reenvíalas directamente.
-									<p>¡Nextbook.ec se encarga del resto!</p>
+								 	
 									</td></tr></tbody></table>
 								 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #444444; margin: 0px; font-size: 15px; padding-bottom: 8px; padding-top: 10px;" valign="top" align="left"></td></tr></tbody></table>
 							   </td></tr></tbody></table>
@@ -404,7 +403,7 @@
 									&nbsp;|&nbsp;
 									<a href="http://www.nextbook.ec/info.html" style="color: #428bca; text-decoration: none; background-color: transparent;">nextbook.ec</a>
 									&nbsp;|&nbsp;
-									<a href="http://www.empresa.nextbook.ec" style="color: #428bca; text-decoration: none; background-color: transparent;">empresa.nextbook.ec</a>
+									<a href="http://www.promoda.ec" style="color: #428bca; text-decoration: none; background-color: transparent;">promoda.ec</a>
 								 </div>
 								 <table class="table-space" height="16" style="height: 16px; font-size: 0px; line-height: 0; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-space-td" valign="middle" height="16" style="height: 16px; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" align="left">&nbsp;</td></tr></tbody></table>
 							 </td></tr></tbody></table>
@@ -531,7 +530,7 @@
 					<table class="table-row" style="table-layout: auto; padding-right: 24px; padding-left: 24px; width: 600px; background-color: #ffffff;" bgcolor="#FFFFFF" width="600" cellspacing="0" cellpadding="0" border="0"><tbody><tr height="55px" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; height: 55px;">
 					   <td class="table-row-td" style="height: 55px; padding-right: 16px; font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; vertical-align: middle;" valign="middle" align="left">
 					     <a href="#" style="color: #428bca; text-decoration: none; padding: 0px; font-size: 18px; line-height: 20px; height: 50px; background-color: transparent;">
-						 	empresa.nextbook.ec
+						 	promoda.ec
 						 </a>
 					   </td>
 					 
@@ -604,7 +603,7 @@
 							&nbsp;|&nbsp;
 							<a href="http://www.nextbook.ec/info.html" style="color: #428bca; text-decoration: none; background-color: transparent;">nextbook.ec</a>
 							&nbsp;|&nbsp;
-							<a href="http://www.empresa.nextbook.ec" style="color: #428bca; text-decoration: none; background-color: transparent;">empresa.nextbook.ec</a>
+							<a href="http://www.promoda.ec" style="color: #428bca; text-decoration: none; background-color: transparent;">promoda.ec</a>
 						 </div>
 						 <table class="table-space" height="16" style="height: 16px; font-size: 0px; line-height: 0; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-space-td" valign="middle" height="16" style="height: 16px; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" align="left">&nbsp;</td></tr></tbody></table>
 					 </td></tr></tbody></table>
@@ -755,7 +754,7 @@
 				<table class="table-row" width="600" bgcolor="#FFFFFF" style="table-layout: fixed; background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-row-td" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 24px; padding-right: 24px;" valign="top" align="left">
 				 <table class="table-col" align="left" width="552" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="table-col-td" width="552" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal;" valign="top" align="left">	
 					<div style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; text-align: center;">
-						<img src="http://www.empresa.nextbook.ec/assets/dist/img/banner_correo_activacion.jpg" style="border: 0px none #444444; vertical-align: middle; display: block; padding-bottom: 9px; width:100%;" hspace="0" vspace="0" border="0">
+						<img src="http://www.promoda.ec/assets/dist/img/banner_correo_activacion.jpg" style="border: 0px none #444444; vertical-align: middle; display: block; padding-bottom: 9px; width:100%;" hspace="0" vspace="0" border="0">
 					</div>
 				 </td></tr></tbody></table>
 				</td></tr></tbody></table>
@@ -785,7 +784,7 @@
 						&nbsp;|&nbsp;
 						<a href="http://www.nextbook.ec/info.html" style="color: #428bca; text-decoration: none; background-color: transparent;">nextbook.ec</a>
 						&nbsp;|&nbsp;
-						<a href="http://www.empresa.nextbook.ec" style="color: #428bca; text-decoration: none; background-color: transparent;">facturanext.com</a>
+						<a href="http://www.promoda.ec" style="color: #428bca; text-decoration: none; background-color: transparent;">facturanext.com</a>
 					 </div>
 					 <table class="table-space" height="16" style="height: 16px; font-size: 0px; line-height: 0; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-space-td" valign="middle" height="16" style="height: 16px; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" align="left">&nbsp;</td></tr></tbody></table>
 				 </td></tr></tbody></table>

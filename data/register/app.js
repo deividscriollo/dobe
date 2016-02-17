@@ -1,15 +1,7 @@
 $(function(){
-
-	// MASKED INPUT
-	// =================================================================
-	// Require Masked Input
-	// http://digitalbush.com/projects/masked-input-plugin/
-	// =================================================================
-
-
 	// Initialize Masked Inputs
 	// * - Represents an alphanumeric character (A-Z,a-z,0-9)
-	$('[name=txt_ruc]').mask('9999999999999');
+	// $('[name=txt_ruc]').mask('9999999999999');
 
 	// FORM VALIDATION FEEDBACK ICONS
 	// =================================================================
@@ -29,7 +21,7 @@ $(function(){
 				validators: {
 					notEmpty: {
 						message: '(*) Este campo es requerido'
-					}
+					},
 				}
 			},
 			txt_correo: {
@@ -79,8 +71,7 @@ $(function(){
 						message: 'The password and its confirm are not the same'
 					}
 				}
-			},
-						
+			},						
 			txt_5: {
 				validators: {
 					notEmpty: {
@@ -115,6 +106,9 @@ $(function(){
                 	$.unblockUI();
 	                if (data[0]==1) {
 	                  swal("Buen Trabajo!", "Hemos enviado un correo electrónico con la información de su cuenta, por favor revise su correo para iniciar sesión.", "success");
+	                };
+	                if (data[0]!=1) {
+	                  swal("Lo sentimos!", "No se ha realizar su petición, por favor intente más tarde...", "warning");
 	                };
                 }
             });
