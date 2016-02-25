@@ -277,72 +277,56 @@
 			print_r(json_encode(array('0')));
 		}else{
 			
-			// $newdata = array(	'razon_social' => $data['empresa'][2],
-			// 					'ruc' => $data['empresa'][4],
-			// 					'nombre_comercial' => $data['empresa'][6],
-			// 					'estado_contribuyente' => $data['empresa'][8],
-			// 					'regimen_simplificado' => $data['empresa'][10],
-			// 					'tipo_contribuyente' => $data['empresa'][12],
-			// 					'obligado_a_llevar_contabilidad' => $data['empresa'][14],
-			// 					'actividad_economica_principal' => $data['empresa'][16],
-			// 					'fecha_de_inicio_de_actividades' => $data['empresa'][18],
-			// 					'fecha_de_cese_de_actividades' => $data['empresa'][20],
-			// 					'fecha_de_reinicio_de_actividades' => $data['empresa'][22],
-			// 					'fecha_actualizacion' => $data['empresa'][24]
-			// 				);
-			// $empresa=json_encode($newdata);
-			// ;
-			// $res=$class->consulta("INSERT INTO empresa.getsri VALUES (	'".$id."',
-			// 														'$empresa',
-			// 														'$_POST[txt_ruc]',
-			// 														'"."0"."',
-			// 														'".$fecha."')");
-
-			for ($i=0; $i < count($data['sucursal'])-6; $i=$i+4) { 
-				$newsucursal = array(	'codigo' => $data['sucursal'][$i+1],
-										'nombrecomercial' => $data['sucursal'][$i+2],
-										'direccion' => $data['sucursal'][$i+3],
-										'estado' => $data['sucursal'][$i+4]
-										 );
-				$sucursal=json_encode($newsucursal);
-				print_r($sucursal);
-				$id2 = $class->idz();
-				// $res=$class->consulta("INSERT INTO empresa.sucursal VALUES ( '".$id2."',
-				// 													'".$id."', '',
-				// 													'$newsucursal',
-				// 													'"."0"."',
-				// 													'".$fecha."')");
-			}
-			// $id2 = $class->idz(); 
-			// $res=$class->consulta("INSERT INTO seg.perfil_usuario VALUES ('$id2',
-			// 																 '$id', 
-			// 																 '$_POST[txt_1]', 
-			// 																 '$_POST[txt_correo]',
-			// 																 '0', 
-			// 																 '$fecha');");
-			// $id3 = $class->idz();
-			// $res=$class->consulta("INSERT INTO seg.acceso VALUES ('$id3', '$id2',
-			// 														 '$_POST[txt_correo]',
-			// 														 md5('$_POST[txt_4]'),
-			// 														 '0',
-			// 														 '$fecha');");
+			$newdata = array(	'razon_social' => $data['empresa'][2],
+								'ruc' => $data['empresa'][4],
+								'nombre_comercial' => $data['empresa'][6],
+								'estado_contribuyente' => $data['empresa'][8],
+								'regimen_simplificado' => $data['empresa'][10],
+								'tipo_contribuyente' => $data['empresa'][12],
+								'obligado_a_llevar_contabilidad' => $data['empresa'][14],
+								'actividad_economica_principal' => $data['empresa'][16],
+								'fecha_de_inicio_de_actividades' => $data['empresa'][18],
+								'fecha_de_cese_de_actividades' => $data['empresa'][20],
+								'fecha_de_reinicio_de_actividades' => $data['empresa'][22],
+								'fecha_actualizacion' => $data['empresa'][24]
+							);
+			$empresa=json_encode($newdata);
+			;
+			$res=$class->consulta("INSERT INTO empresa.getsri VALUES (	'".$id."',
+																	'$empresa',
+																	'$_POST[txt_ruc]',
+																	'"."0"."',
+																	'".$fecha."')");
+			$id2 = $class->idz(); 
+			$res=$class->consulta("INSERT INTO seg.perfil_usuario VALUES ('$id2',
+																			 '$id', 
+																			 '$_POST[txt_1]', 
+																			 '$_POST[txt_correo]',
+																			 '0', 
+																			 '$fecha');");
+			$id3 = $class->idz();
+			$res=$class->consulta("INSERT INTO seg.acceso VALUES ('$id3', '$id2',
+																	 '$_POST[txt_correo]',
+																	 md5('$_POST[txt_4]'),
+																	 '0',
+																	 '$fecha');");
 			
-			// $empresa= $data['empresa'][6];
-			// if ($empresa=='') {
-			// 	$empresa= $data['empresa'][16];
-			// }
-			// if(!$res) {
-			// 	$respuesta[]=0; //error al momento de guardar
-			// }else {
-			// 	$envio_correo = activacion_cuenta($_POST['txt_correo'],$empresa,$_POST['txt_ruc'],$id);
-			// 	if ($envio_correo) {
-			// 		print 'correo eviado';
-			// 	}else{
-			// 		print 'correo no enviado';
-			// 	}
-			// 	$respuesta[]=1; //datos guardados correctamento
-			// }
-			// print json_encode($respuesta);
+			$empresa= $data['empresa'][6];
+			if ($empresa=='') {
+				$empresa= $data['empresa'][16];
+			}
+			if(!$res) {
+				$respuesta[]=0; //error al momento de guardar
+			}else {
+				$envio_correo = activacion_cuenta($_POST['txt_correo'],$empresa,$_POST['txt_ruc'],$id);
+				if ($envio_correo) {
+					print 'correo eviado';
+				}else{
+					print 'correo no enviado';
+				}
+				$respuesta[]=1; //datos guardados correctamento
+			}
+			print json_encode($respuesta);
 		}		
 	}
 	function to_pg_array($set) {
