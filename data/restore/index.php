@@ -1,3 +1,12 @@
+<?php 
+	// procesos session
+	session_start();
+	if (isset($_SESSION['modelo'])) {
+	  // $_SESSION['modelo'] = 0;
+		header('Location: ../');
+	  //con session
+	}
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -96,39 +105,27 @@
 			</div>
 		</div>
 		
-		<!-- LOGIN FORM -->
+		<!-- PASSWORD RESETTING FORM -->
 		<!--===================================================-->
 		<div class="cls-content">
 			<div class="cls-content-sm panel">
 				<div class="panel-body">
-					<p class="pad-btm">Iniciar sesión en su cuenta</p>
-					<form action="index.html">
+					<p class="pad-btm">Enter your email address to recover your password. </p>
+					<form action="http://www.themeon.net/nifty/v2.2.3/pages-login.html">
 						<div class="form-group">
 							<div class="input-group">
-								<div class="input-group-addon"><i class="fa fa-user"></i></div>
-								<input type="text" class="form-control" placeholder="Correo Electrónico">
+								<div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+								<input type="email" class="form-control" placeholder="Email">
 							</div>
 						</div>
-						<div class="form-group">
-							<div class="input-group">
-								<div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
-								<input type="password" class="form-control" placeholder="Password">
-							</div>
+						<div class="form-group text-right">
+							<button class="btn btn-success text-uppercase" type="submit">Reset Password</button>
 						</div>
-						<div class="row pull-right">
-							<div class="col-xs-4">
-								<div class="form-group text-right">
-								<button class="btn btn-success text-uppercase" type="submit">Entrar</button>
-								</div>
-							</div>
-						</div>
-						
 					</form>
 				</div>
 			</div>
 			<div class="pad-ver">
-				<a href="../restore/" class="btn-link mar-rgt">Se te olvidó tu contraseña ?</a>
-				<a href="../register/" class="btn-link mar-lft">Crear cuenta <i class="fa fa-database"></i></a>
+				<a href="../login/" class="btn-link mar-rgt">Atrás para iniciar sesión</a>
 			</div>
 		</div>
 		<!--===================================================-->	

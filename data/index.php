@@ -1,5 +1,11 @@
-<?php 
-//proceso de sessiones
+<?php
+	// procesos session
+	session_start();
+	if (!isset($_SESSION['modelo'])) {
+	  // $_SESSION['modelo'] = 0;
+		header('Location: login/');
+	  //con session
+	}
 ?>
 <!DOCTYPE html>
 <html lang="es" ng-app="scotchApp">
@@ -7,35 +13,34 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro-Mo</title>
+    <title>Pro-Moda - Admin.</title>
     <link rel="icon" type="image/png" href="img/logo.png" />
 
     <!--STYLESHEET-->
     <!--=================================================-->
 
-    <!--Open Sans Font [ OPTIONAL ] -->
-     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
-
     <!--Bootstrap Stylesheet [ REQUIRED ]-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!--Nifty Stylesheet [ REQUIRED ]-->
-    <link href="css/nifty.min.css" rel="stylesheet">
+    <link href="../css/nifty.min.css" rel="stylesheet">
+    <!-- color -->
+    <link href="../css/color.css" rel="stylesheet">
     
     <!--Font Awesome [ OPTIONAL ]-->
-    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!--Animate.css [ OPTIONAL ]-->
-    <link href="plugins/animate-css/animate.min.css" rel="stylesheet">
+    <link href="../plugins/animate-css/animate.min.css" rel="stylesheet">
 
     <!--Morris.js [ OPTIONAL ]-->
-    <link href="plugins/morris-js/morris.min.css" rel="stylesheet">
+    <link href="../plugins/morris-js/morris.min.css" rel="stylesheet">
 
     <!--Switchery [ OPTIONAL ]-->
-    <link href="plugins/switchery/switchery.min.css" rel="stylesheet">
+    <link href="../plugins/switchery/switchery.min.css" rel="stylesheet">
 
     <!--Bootstrap Select [ OPTIONAL ]-->
-    <link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
 
     <!-- leafletjs  map-->
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
@@ -44,25 +49,32 @@
     <!--=================================================-->
 
     <!--Page Load Progress Bar [ OPTIONAL ]-->
-    <link href="plugins/pace/pace.min.css" rel="stylesheet">
-    <script src="plugins/pace/pace.min.js"></script>
+    <link href="../plugins/pace/pace.min.css" rel="stylesheet">
+    <script src="../plugins/pace/pace.min.js"></script>
 
     <!-- leafletjs  map-->
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
     <!-- Angular -->
-	<script src="js/angular-1.5.0/angular.js"></script>
-	<script src="js/angular-1.5.0/angular-route.js"></script>
-	<script src="js/angular-1.5.0/angular-animate.js"></script>
-	<script src="js/angular-1.5.0/ui-bootstrap-tpls-1.1.2.min.js"></script>
+	<script src="../js/angular-1.5.0/angular.js"></script>
+	<script src="../js/angular-1.5.0/angular-route.js"></script>
+	<script src="../js/angular-1.5.0/angular-animate.js"></script>
+	<script src="../js/angular-1.5.0/ui-bootstrap-tpls-1.1.2.min.js"></script>
+
+	<!-- editable -->
+	<link href="../js/angular-1.5.0/editable/css/xeditable.min.css" rel="stylesheet">
+	
+	<!--X-editable [ OPTIONAL ]-->
+	<link href="../plugins/x-editable/css/bootstrap-editable.css" rel="stylesheet">
+    
 
 	<!-- controller -->
-	<script src="data/app.js"></script>
+	<script src="app.js"></script>
 	<!-- controller add app -->
-	<script src="data/home/app.js"></script>
-	<script src="data/map/app.js"></script>
-	<script src="data/empresa/app.js"></script>
-	<script src="data/sucursal/app.js"></script>
+	<script src="home/app.js"></script>
+	<script src="map/app.js"></script>
+	<script src="empresa/app.js"></script>
+	<script src="sucursal/app.js"></script>
 </head>
 
 <body>
@@ -76,7 +88,7 @@
 				<!--================================-->
 				<div class="navbar-header">
 					<a href="#/" class="navbar-brand">
-						<img src="img/logo.png" alt="Promoda" class="brand-icon">
+						<img src="../img/logo.png" alt="Promoda" class="brand-icon">
 						<div class="brand-title">
 							<span class="brand-text"> Pro Moda</span>
 						</div>
@@ -193,7 +205,7 @@
 						<li id="dropdown-user" class="dropdown">
 							<a href="" data-toggle="dropdown" class="dropdown-toggle text-right">
 								<span class="pull-right">
-									<img class="img-circle img-user media-object" src="img/av1.png" alt="Profile Picture">
+									<img class="img-circle img-user media-object" src="../img/av1.png" alt="Profile Picture">
 								</span>
 								<div class="username hidden-xs">John Doe</div>
 							</a>
@@ -210,7 +222,7 @@
 								</ul>
 								<!-- Dropdown footer -->
 								<div class="pad-all text-right">
-									<a href="pages-login.html" class="btn btn-primary">
+									<a href="salir.php" class="btn btn-primary">
 										<i class="fa fa-sign-out fa-fw"></i> Cerrar Session
 									</a>
 								</div>
@@ -543,34 +555,37 @@
     <!--=================================================-->
 
     <!--jQuery [ REQUIRED ]-->
-    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="../js/jquery-2.1.1.min.js"></script>
 
 
     <!--BootstrapJS [ RECOMMENDED ]-->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
 
     <!--Fast Click [ OPTIONAL ]-->
-    <script src="plugins/fast-click/fastclick.min.js"></script>
+    <script src="../plugins/fast-click/fastclick.min.js"></script>
 
     
     <!--Nifty Admin [ RECOMMENDED ]-->
-    <script src="js/nifty.min.js"></script>
+    <script src="../js/nifty.min.js"></script>
 
     <!--Sparkline [ OPTIONAL ]-->
-    <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../plugins/sparkline/jquery.sparkline.min.js"></script>
 
 
     <!--Skycons [ OPTIONAL ]-->
-    <script src="plugins/skycons/skycons.min.js"></script>
+    <script src="../plugins/skycons/skycons.min.js"></script>
 
 
     <!--Switchery [ OPTIONAL ]-->
-    <script src="plugins/switchery/switchery.min.js"></script>
+    <script src="../plugins/switchery/switchery.min.js"></script>
 
 
     <!--Bootstrap Select [ OPTIONAL ]-->
-    <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="../plugins/bootstrap-select/bootstrap-select.min.js"></script>
+
+    <!--Bootstrap editable [ OPTIONAL ]-->
+    <script src="../plugins/x-editable/js/bootstrap-editable.min.js"></script>
 
 </body>
 </html>

@@ -40,7 +40,7 @@ class email  extends PHPMailer{
        return $this->Send() ;
    	}
     public function url_(){
-		return $_SERVER['SERVER_NAME'].'/book/';
+		return $_SERVER['SERVER_NAME'].'/dobe/';
 	}
 
 }//--> fin clase

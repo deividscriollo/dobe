@@ -5,7 +5,7 @@
 	if ('localhost'==$_SERVER['SERVER_NAME']) {
 		require'classcorreolocal.php';
 	};
-	if ('www.nextbook.ec'==$_SERVER['SERVER_NAME']) {
+	if ('www.promodaatuntaqui.com'==$_SERVER['SERVER_NAME']) {
 		require'classcorreoweb.php';
 	};
 	// registro de empresa envio correo para activacion de cuenta
@@ -115,7 +115,7 @@
 					<table class="table-row" style="table-layout: auto; padding-right: 24px; padding-left: 24px; width: 600px; background-color: #ffffff;" bgcolor="#FFFFFF" width="600" cellspacing="0" cellpadding="0" border="0"><tbody><tr height="55px" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; height: 55px;">
 					   <td class="table-row-td" style="height: 55px; padding-right: 16px; font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; vertical-align: middle;" valign="middle" align="left">
 					     <a href="#" style="color: #428bca; text-decoration: none; padding: 0px; font-size: 18px; line-height: 20px; height: 50px; background-color: transparent;">
-						 	promoda.ec
+						 	promodaatuntaqui.com
 						 </a>
 					   </td>
 					 
@@ -137,15 +137,15 @@
 					<table class="table-row" width="600" bgcolor="#FFFFFF" style="table-layout: fixed; background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-row-td" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 24px; padding-right: 24px;" valign="top" align="left">
 					 <table class="table-col" align="left" width="552" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="table-col-td" width="552" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal;" valign="top" align="left">	
 						<div style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; text-align: center;">
-							<img src="http://nextbook.ec/next/assets/images/banner_correo2.jpg" style="border: 0px none #444444; vertical-align: middle; display: block; padding-bottom: 9px; width:100%;" hspace="0" vspace="0" border="0">
+							<img src="https://raw.githubusercontent.com/deividscriollo/dobe/master/img/correo.jpg" style="border: 0px none #444444; vertical-align: middle; display: block; padding-bottom: 9px; width:100%;" hspace="0" vspace="0" border="0">
 						</div>
 					 </td></tr></tbody></table>
 					</td></tr></tbody></table>
 
 					<table class="table-row" width="600" bgcolor="#FFFFFF" style="table-layout: fixed; background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-row-td" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 36px; padding-right: 36px;" valign="top" align="left">
 					   <table class="table-col" align="left" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="table-col-td" width="528" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal;" valign="top" align="left">
-						 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-size: 20px; margin: 0px; font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #478fca; padding-bottom: 10px; padding-top: 15px;" valign="top" align="left">Estimados, '.$empresa.'</td></tr></tbody></table>
-						 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #444444; margin: 0px; font-size: 15px; padding-bottom: 8px; padding-top: 10px;" valign="top" align="left">Se ha registrado con éxito en nextbook.ec con tu número de RUC '.$ruc.', por favor haz clic en el siguiente enlace para continuar.</td></tr></tbody></table>
+						 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-size: 20px; margin: 0px; font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #478fca; padding-bottom: 10px; padding-top: 15px;" valign="top" align="left">Estimado/a, '.$empresa.'</td></tr></tbody></table>
+						 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #444444; margin: 0px; font-size: 15px; padding-bottom: 8px; padding-top: 10px;" valign="top" align="left">Se ha registrado con éxito en promodaadmin con tu número de RUC '.$ruc.', por favor haz clic en el siguiente enlace para continuar.</td></tr></tbody></table>
 					   </td></tr></tbody></table>
 					</td></tr></tbody></table>
 
@@ -184,11 +184,11 @@
 						 <div style="font-family: Arial, sans-serif; line-height: 19px; color: #777777; font-size: 14px; text-align: center;">&copy; 2015 CONCEPTUAL BUSINESS GROUP</div>
 						 <table class="table-space" height="12" style="height: 12px; font-size: 0px; line-height: 0; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-space-td" valign="middle" height="12" style="height: 12px; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" align="left">&nbsp;</td></tr></tbody></table>
 						 <div style="font-family: Arial, sans-serif; line-height: 19px; color: #bbbbbb; font-size: 13px; text-align: center;">
-							<a href="http://www.nextbook.ec/terminos.html" style="color: #428bca; text-decoration: none; background-color: transparent;">Términos de Uso</a>
+							<a href="#" style="color: #428bca; text-decoration: none; background-color: transparent;">Términos de Uso</a>
 							&nbsp;|&nbsp;
-							<a href="http://www.nextbook.ec/info.html" style="color: #428bca; text-decoration: none; background-color: transparent;">nextbook.ec</a>
+							<a href="#" style="color: #428bca; text-decoration: none; background-color: transparent;">promodaatuntaqui.com</a>
 							&nbsp;|&nbsp;
-							<a href="http://www.promoda.ec" style="color: #428bca; text-decoration: none; background-color: transparent;">promoda.ec</a>
+							<a href="http://www.promodaatuntaqui.com" style="color: #428bca; text-decoration: none; background-color: transparent;">promodaatuntaqui.com</a>
 						 </div>
 						 <table class="table-space" height="16" style="height: 16px; font-size: 0px; line-height: 0; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-space-td" valign="middle" height="16" style="height: 16px; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" align="left">&nbsp;</td></tr></tbody></table>
 					 </td></tr></tbody></table>
@@ -319,7 +319,7 @@
 							<table class="table-row" style="table-layout: auto; padding-right: 24px; padding-left: 24px; width: 600px; background-color: #ffffff;" bgcolor="#FFFFFF" width="600" cellspacing="0" cellpadding="0" border="0"><tbody><tr height="55px" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; height: 55px;">
 							   <td class="table-row-td" style="height: 55px; padding-right: 16px; font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; vertical-align: middle;" valign="middle" align="left">
 							     <a href="#" style="color: #428bca; text-decoration: none; padding: 0px; font-size: 18px; line-height: 20px; height: 50px; background-color: transparent;">
-								 	promoda.ec
+								 	promodaatuntaqui.com
 								 </a>
 							   </td>
 							 
@@ -341,14 +341,14 @@
 							<table class="table-row" width="600" bgcolor="#FFFFFF" style="table-layout: fixed; background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-row-td" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 24px; padding-right: 24px;" valign="top" align="left">
 							 <table class="table-col" align="left" width="552" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="table-col-td" width="552" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal;" valign="top" align="left">	
 								<div style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; text-align: center;">
-									<img src="http://nextbook.ec/next/assets/images/banner_correo2.jpg" style="border: 0px none #444444; vertical-align: middle; display: block; padding-bottom: 9px; width: 100%;" hspace="0" vspace="0" border="0">
+									<img src="https://raw.githubusercontent.com/deividscriollo/dobe/master/img/correo.jpg" style="border: 0px none #444444; vertical-align: middle; display: block; padding-bottom: 9px; width: 100%;" hspace="0" vspace="0" border="0">
 								</div>
 							 </td></tr></tbody></table>
 							</td></tr></tbody></table>
 
 							<table class="table-row" width="600" bgcolor="#FFFFFF" style="table-layout: fixed; background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-row-td" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 36px; padding-right: 36px;" valign="top" align="left">
 							   <table class="table-col" align="left" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="table-col-td" width="528" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal;" valign="top" align="left">
-								 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-size: 20px; margin: 0px; font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #478fca; padding-bottom: 10px; padding-top: 15px;" valign="top" align="left">Estimados, '.$empresa.'</td></tr></tbody></table>
+								 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-size: 20px; margin: 0px; font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #478fca; padding-bottom: 10px; padding-top: 15px;" valign="top" align="left">Estimado/a, '.$empresa.'</td></tr></tbody></table>
 								 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #444444; margin: 0px; font-size: 15px; padding-bottom: 8px; padding-top: 10px;" valign="top" align="left">Su nueva información de acceso a su cuenta es la siguiente:</td></tr></tbody></table>
 							   </td></tr></tbody></table>
 							</td></tr></tbody></table>
@@ -399,11 +399,11 @@
 								 <div style="font-family: Arial, sans-serif; line-height: 19px; color: #777777; font-size: 14px; text-align: center;">&copy; 2015 CONCEPTUAL BUSINESS GROUP</div>
 								 <table class="table-space" height="12" style="height: 12px; font-size: 0px; line-height: 0; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-space-td" valign="middle" height="12" style="height: 12px; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" align="left">&nbsp;</td></tr></tbody></table>
 								 <div style="font-family: Arial, sans-serif; line-height: 19px; color: #bbbbbb; font-size: 13px; text-align: center;">
-									<a href="http://www.nextbook.ec/terminos.html" style="color: #428bca; text-decoration: none; background-color: transparent;">Términos de Uso</a>
+									<a href="#" style="color: #428bca; text-decoration: none; background-color: transparent;">Términos de Uso</a>
 									&nbsp;|&nbsp;
-									<a href="http://www.nextbook.ec/info.html" style="color: #428bca; text-decoration: none; background-color: transparent;">nextbook.ec</a>
+									<a href="#" style="color: #428bca; text-decoration: none; background-color: transparent;">promodaatuntaqui.com</a>
 									&nbsp;|&nbsp;
-									<a href="http://www.promoda.ec" style="color: #428bca; text-decoration: none; background-color: transparent;">promoda.ec</a>
+									<a href="http://www.promodaatuntaqui.com" style="color: #428bca; text-decoration: none; background-color: transparent;">promodaatuntaqui.com</a>
 								 </div>
 								 <table class="table-space" height="16" style="height: 16px; font-size: 0px; line-height: 0; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-space-td" valign="middle" height="16" style="height: 16px; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" align="left">&nbsp;</td></tr></tbody></table>
 							 </td></tr></tbody></table>
@@ -530,7 +530,7 @@
 					<table class="table-row" style="table-layout: auto; padding-right: 24px; padding-left: 24px; width: 600px; background-color: #ffffff;" bgcolor="#FFFFFF" width="600" cellspacing="0" cellpadding="0" border="0"><tbody><tr height="55px" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; height: 55px;">
 					   <td class="table-row-td" style="height: 55px; padding-right: 16px; font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; vertical-align: middle;" valign="middle" align="left">
 					     <a href="#" style="color: #428bca; text-decoration: none; padding: 0px; font-size: 18px; line-height: 20px; height: 50px; background-color: transparent;">
-						 	promoda.ec
+						 	promodaatuntaqui.com
 						 </a>
 					   </td>
 					 
@@ -552,15 +552,15 @@
 					<table class="table-row" width="600" bgcolor="#FFFFFF" style="table-layout: fixed; background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-row-td" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 24px; padding-right: 24px;" valign="top" align="left">
 					 <table class="table-col" align="left" width="552" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="table-col-td" width="552" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal;" valign="top" align="left">	
 						<div style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; text-align: center;">
-							<img src="http://www.nextbook.ec/next/assets/images/banner_correo.jpg" style="border: 0px none #444444; vertical-align: middle; display: block; padding-bottom: 9px; width:100%;" hspace="0" vspace="0" border="0">
+							<img src="https://raw.githubusercontent.com/deividscriollo/dobe/master/img/correo.jpg" style="border: 0px none #444444; vertical-align: middle; display: block; padding-bottom: 9px; width:100%;" hspace="0" vspace="0" border="0">
 						</div>			
 					 </td></tr></tbody></table>
 					</td></tr></tbody></table>
 
 					<table class="table-row" width="600" bgcolor="#FFFFFF" style="table-layout: fixed; background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-row-td" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 36px; padding-right: 36px;" valign="top" align="left">
 					   <table class="table-col" align="left" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="table-col-td" width="528" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal;" valign="top" align="left">
-						 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-size: 20px; margin: 0px; font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #478fca; padding-bottom: 10px; padding-top: 15px;" valign="top" align="left">Estimados, '.$nombre.'</td></tr></tbody></table>
-						 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #444444; margin: 0px; font-size: 15px; padding-bottom: 8px; padding-top: 10px;" valign="top" align="left">'.$nombre.' te agregado como colaborador en nextbook.ec te pedimos hacer clic en el siguiente enlace para poder activar tu cuenta.</td></tr></tbody></table>
+						 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-size: 20px; margin: 0px; font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #478fca; padding-bottom: 10px; padding-top: 15px;" valign="top" align="left">Estimado/a, '.$nombre.'</td></tr></tbody></table>
+						 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #444444; margin: 0px; font-size: 15px; padding-bottom: 8px; padding-top: 10px;" valign="top" align="left">'.$nombre.' te agregado como colaborador en promodaatuntaqui.com te pedimos hacer clic en el siguiente enlace para poder activar tu cuenta.</td></tr></tbody></table>
 					   </td></tr></tbody></table>
 					</td></tr></tbody></table>
 
@@ -599,11 +599,11 @@
 						 <div style="font-family: Arial, sans-serif; line-height: 19px; color: #777777; font-size: 14px; text-align: center;">&copy; 2015 CONCEPTUAL BUSINESS GROUP</div>
 						 <table class="table-space" height="12" style="height: 12px; font-size: 0px; line-height: 0; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-space-td" valign="middle" height="12" style="height: 12px; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" align="left">&nbsp;</td></tr></tbody></table>
 						 <div style="font-family: Arial, sans-serif; line-height: 19px; color: #bbbbbb; font-size: 13px; text-align: center;">
-							<a href="http://www.nextbook.ec/terminos.html" style="color: #428bca; text-decoration: none; background-color: transparent;">Términos de Uso</a>
+							<a href="#" style="color: #428bca; text-decoration: none; background-color: transparent;">Términos de Uso</a>
 							&nbsp;|&nbsp;
-							<a href="http://www.nextbook.ec/info.html" style="color: #428bca; text-decoration: none; background-color: transparent;">nextbook.ec</a>
+							<a href="#" style="color: #428bca; text-decoration: none; background-color: transparent;">promodaatuntaqui.com</a>
 							&nbsp;|&nbsp;
-							<a href="http://www.promoda.ec" style="color: #428bca; text-decoration: none; background-color: transparent;">promoda.ec</a>
+							<a href="http://www.promodaatuntaqui.com" style="color: #428bca; text-decoration: none; background-color: transparent;">promodaatuntaqui.com</a>
 						 </div>
 						 <table class="table-space" height="16" style="height: 16px; font-size: 0px; line-height: 0; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-space-td" valign="middle" height="16" style="height: 16px; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" align="left">&nbsp;</td></tr></tbody></table>
 					 </td></tr></tbody></table>
@@ -732,7 +732,7 @@
 				<table class="table-row" style="table-layout: auto; padding-right: 24px; padding-left: 24px; width: 600px; background-color: #ffffff;" bgcolor="#FFFFFF" width="600" cellspacing="0" cellpadding="0" border="0"><tbody><tr height="55px" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; height: 55px;">
 				   <td class="table-row-td" style="height: 55px; padding-right: 16px; font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; vertical-align: middle;" valign="middle" align="left">
 				     <a href="#" style="color: #428bca; text-decoration: none; padding: 0px; font-size: 18px; line-height: 20px; height: 50px; background-color: transparent;">
-					 	facturanext.com
+					 	
 					 </a>
 				   </td>
 				 
@@ -754,14 +754,14 @@
 				<table class="table-row" width="600" bgcolor="#FFFFFF" style="table-layout: fixed; background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-row-td" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 24px; padding-right: 24px;" valign="top" align="left">
 				 <table class="table-col" align="left" width="552" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="table-col-td" width="552" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal;" valign="top" align="left">	
 					<div style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; text-align: center;">
-						<img src="http://www.promoda.ec/assets/dist/img/banner_correo_activacion.jpg" style="border: 0px none #444444; vertical-align: middle; display: block; padding-bottom: 9px; width:100%;" hspace="0" vspace="0" border="0">
+						<img src="http://www.promodaatuntaqui.com/assets/dist/img/banner_correo_activacion.jpg" style="border: 0px none #444444; vertical-align: middle; display: block; padding-bottom: 9px; width:100%;" hspace="0" vspace="0" border="0">
 					</div>
 				 </td></tr></tbody></table>
 				</td></tr></tbody></table>
 
 				<table class="table-row" width="600" bgcolor="#FFFFFF" style="table-layout: fixed; background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-row-td" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 36px; padding-right: 36px;" valign="top" align="left">
 				   <table class="table-col" align="left" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="table-col-td" width="528" style="font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal;" valign="top" align="left">
-					 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-size: 20px; margin: 0px; font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #478fca; padding-bottom: 10px; padding-top: 15px;" valign="top" align="left">Estimados, '.$empresa.'</td></tr></tbody></table>
+					 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-size: 20px; margin: 0px; font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #478fca; padding-bottom: 10px; padding-top: 15px;" valign="top" align="left">Estimado/a, '.$empresa.'</td></tr></tbody></table>
 					 <table class="header-row" width="528" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed;"><tbody><tr><td class="header-row-td" width="528" style="font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #444444; margin: 0px; font-size: 15px; padding-bottom: 8px; padding-top: 10px;" valign="top" align="left">'.$mensaje.'</td></tr></tbody></table>
 				   </td></tr></tbody></table>
 				</td></tr></tbody></table>
@@ -780,11 +780,11 @@
 					 <div style="font-family: Arial, sans-serif; line-height: 19px; color: #777777; font-size: 14px; text-align: center;">&copy; 2015 CONCEPTUAL BUSINESS GROUP</div>
 					 <table class="table-space" height="12" style="height: 12px; font-size: 0px; line-height: 0; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-space-td" valign="middle" height="12" style="height: 12px; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" align="left">&nbsp;</td></tr></tbody></table>
 					 <div style="font-family: Arial, sans-serif; line-height: 19px; color: #bbbbbb; font-size: 13px; text-align: center;">
-						<a href="http://www.nextbook.ec/terminos.html" style="color: #428bca; text-decoration: none; background-color: transparent;">Términos de Uso</a>
+						<a href="#" style="color: #428bca; text-decoration: none; background-color: transparent;">Términos de Uso</a>
 						&nbsp;|&nbsp;
-						<a href="http://www.nextbook.ec/info.html" style="color: #428bca; text-decoration: none; background-color: transparent;">nextbook.ec</a>
+						<a href="#" style="color: #428bca; text-decoration: none; background-color: transparent;">promodaatuntaqui.com</a>
 						&nbsp;|&nbsp;
-						<a href="http://www.promoda.ec" style="color: #428bca; text-decoration: none; background-color: transparent;">facturanext.com</a>
+						<a href="http://www.promodaatuntaqui.com" style="color: #428bca; text-decoration: none; background-color: transparent;"></a>
 					 </div>
 					 <table class="table-space" height="16" style="height: 16px; font-size: 0px; line-height: 0; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="table-space-td" valign="middle" height="16" style="height: 16px; width: 528px; background-color: #ffffff;" width="528" bgcolor="#FFFFFF" align="left">&nbsp;</td></tr></tbody></table>
 				 </td></tr></tbody></table>

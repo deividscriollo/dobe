@@ -1,4 +1,20 @@
+.panel-control .nav-tabs>li>a {
+    cursor: pointer;
+}
+#content-container {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
 
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+#footer{
+    height: 30px;
+}
 /*by style david criollo*/
 
 .orange {

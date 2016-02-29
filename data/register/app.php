@@ -311,18 +311,16 @@
 																	 '0',
 																	 '$fecha');");
 			
-			$empresa= $data['empresa'][6];
-			if ($empresa=='') {
-				$empresa= $data['empresa'][16];
-			}
+			$empresa= $data['empresa'][2];
+
 			if(!$res) {
 				$respuesta[]=0; //error al momento de guardar
 			}else {
 				$envio_correo = activacion_cuenta($_POST['txt_correo'],$empresa,$_POST['txt_ruc'],$id);
 				if ($envio_correo) {
-					print 'correo eviado';
+					$respuesta[]=1; //datos guardados correctamento
 				}else{
-					print 'correo no enviado';
+					$respuesta[]=0; //proces correo no enviado
 				}
 				$respuesta[]=1; //datos guardados correctamento
 			}

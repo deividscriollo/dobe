@@ -1,142 +1,184 @@
 <div id="content-container">
 	<div id="page-content">
-		<div class="panel">
-			<div class="eq-height clearfix">
-				<div class="col-md-5 eq-box-md text-center box-vmiddle-wrap bg-primary">
-					<!-- Simple Promotion Widget -->
-					<!--===================================================-->
-					<div class="box-vmiddle pad-all">
-						<h3 class="text-thin">Nombre Comercia</h3>
-						<span class="icon-wrap icon-wrap-lg icon-circle bg-trans-light">
-							<i class="fa fa-database fa-5x text-primary"></i>
-						</span>
-						<p>Ubicación del Establecimiento</p>
-						<p>Ruc</p>
+		<!--Panel with Tabs-->
+			<!--===================================================-->
+			<div class="panel">
+	
+				<!--Panel heading-->
+				<div class="panel-heading">
+					<div class="panel-control">
+						<ul class="nav nav-tabs">
+							<li ng-class="{ active: isSet(1)}">
+								<a ng-click="setTab(1)" data-toggle="tab">General</a>
+							</li>
+							<li ng-class="{ active: isSet(2)}">
+								<a ng-click="setTab(2)" data-toggle="tab">Configuración</a>
+							</li>
+						</ul>
 					</div>
-					<!--===================================================-->
+					<h3 class="panel-title">Información {{ user.name || 'empty' }}</h3>
 				</div>
-				<div class="col-md-7 eq-box-md eq-no-panel">
-					<div class="panel">
-						<div class="panel-heading">
-							<h3 class="panel-title">Información Empresa</h3>
-						</div>
-			
-						<!--Hover Rows-->
-						<!--===================================================-->
-						<div class="panel-body">
-							<div class="col-sm-6">
-								<table class="table table-hover table-vcenter">
-									<thead>
-										<tr>
-											<th class="min-width">Icono</th>
-											<th>Información</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-purple"><i class="fa fa-desktop fa-lg"></i></span></td>
-											<td>
-												<span class="text-semibold">Nombre Comercial</span>
-												<br>
-												<small class="text-muted">Last 7 days : 4,234k</small>
-											</td>
-										</tr>
-										<tr>
-											<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-info"><i class="fa fa-laptop fa-lg"></i></span></td>
-											<td>
-												<span class="text-semibold">Estado del Contribu.. en el RUC</span>
-												<br>
-												<small class="text-muted">Last 7 days : 3,876k</small>
-											</td>
-										</tr>
-										<tr>
-											<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-danger"><i class="fa fa-tablet fa-lg"></i></span></td>
-											<td>
-												<span class="text-semibold">Clase de Contribuyente</span>
-												<br>
-												<small class="text-muted">Last 7 days : 45,678k</small>
-											</td>
-										</tr>
-										<tr>
-											<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
-											<td>
-												<span class="text-semibold">Tipo de Contribuyente</span>
-												<br>
-												<small class="text-muted">Last 7 days : 34,553k</small>
-											</td>
-										</tr>
-										<tr>
-											<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
-											<td>
-												<span class="text-semibold">Actividad Económica Principal</span>
-												<br>
-												<small class="text-muted">Last 7 days : 34,553k</small>
-											</td>
-										</tr>
-										
-									</tbody>
-								</table>
+	
+				<!--Panel body-->
+				<div class="panel-body">
+					<div class="tab-content">
+						<div class="tab-pane fade in" ng-class="{ active: isSet(1)}" ng-show="isSet(1)">
+							<div class="panel">
+								<div class="eq-height clearfix">
+									<div class="col-md-4 eq-box-md text-center box-vmiddle-wrap bg-primary">
+										<!-- Simple Promotion Widget -->
+										<!--===================================================-->
+										<div class="box-vmiddle pad-all">
+											<h3 class="text-thin">Nombre Comercia</h3>
+											<span class="icon-wrap icon-wrap-lg icon-circle bg-trans-light">
+												<i class="fa fa-database fa-5x text-primary"></i>
+											</span>
+											<p>Ubicación del Establecimiento</p>
+											<p>Ruc</p>
+										</div>
+										<!--===================================================-->
+									</div>
+									<div class="col-md-8 eq-box-md eq-no-panel">
+										<div class="panel">
+											<div class="panel-heading">
+												<h3 class="panel-title">Información Empresa</h3>
+											</div>
+								
+											<!--Hover Rows-->
+											<!--===================================================-->
+											<div class="panel-body">
+												<div class="col-sm-6">
+													<table class="table table-hover table-vcenter">
+														<thead>
+															<tr>
+																<th class="min-width">Icono</th>
+																<th>Información</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-purple"><i class="fa fa-desktop fa-lg"></i></span></td>
+																<td>
+																	<span class="text-semibold">Nombre Comercial</span>
+																	<br>
+																	<div>
+																		<span id="editable_nombre_comercial">
+																			{{user.name}}
+																		</span>
+																	<div>
+																</td>
+															</tr>
+															<tr>
+																<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-info"><i class="fa fa-laptop fa-lg"></i></span></td>
+																<td>
+																	<span class="text-semibold">Estado del Contribu.. en el RUC</span>
+																	<br>
+																	<small class="text-muted">
+																		<a href="#" editable-text="user.name">
+																			{{ user.name || 'empty' }}
+																		</a>
+																	</small>
+																</td>
+															</tr>
+															<tr>
+																<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-danger"><i class="fa fa-tablet fa-lg"></i></span></td>
+																<td>
+																	<span class="text-semibold">Clase de Contribuyente</span>
+																	<br>
+																	<small class="text-muted">Last 7 days : 45,678k</small>
+																</td>
+															</tr>
+															<tr>
+																<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
+																<td>
+																	<span class="text-semibold">Tipo de Contribuyente</span>
+																	<br>
+																	<small class="text-muted">Last 7 days : 34,553k</small>
+																</td>
+															</tr>
+															<tr>
+																<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
+																<td>
+																	<span class="text-semibold">Actividad Económica Principal</span>
+																	<br>
+																	<small class="text-muted">Last 7 days : 34,553k</small>
+																</td>
+															</tr>
+															
+														</tbody>
+													</table>
+												</div>
+												<div class="col-sm-6">
+													<table class="table table-hover table-vcenter">
+														<thead>
+															<tr>
+																<th class="min-width">Icono</th>
+																<th>Información</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
+																<td>
+																	<span class="text-semibold">Numero Ruc</span>
+																	<br>
+																	<small class="text-muted">Last 7 days : 34,553k</small>
+																</td>
+															</tr>
+															<tr>
+																<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
+																<td>
+																	<span class="text-semibold">Fecha de inicio de actividades</span>
+																	<br>
+																	<small class="text-muted">Last 7 days : 34,553k</small>
+																</td>
+															</tr>
+															<tr>
+																<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
+																<td>
+																	<span class="text-semibold">Fecha de cese de actividades</span>
+																	<br>
+																	<small class="text-muted">Last 7 days : 34,553k</small>
+																</td>
+															</tr>
+															<tr>
+																<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
+																<td>
+																	<span class="text-semibold">Fecha reinicio de actividades</span>
+																	<br>
+																	<small class="text-muted">Last 7 days : 34,553k</small>
+																</td>
+															</tr>
+															<tr>
+																<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
+																<td>
+																	<span class="text-semibold">Fecha actualización</span>
+																	<br>
+																	<small class="text-muted">Last 7 days : 34,553k</small>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<!--===================================================-->
+											<!--End Hover Rows-->
+								
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="col-sm-6">
-								<table class="table table-hover table-vcenter">
-									<thead>
-										<tr>
-											<th class="min-width">Icono</th>
-											<th>Información</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
-											<td>
-												<span class="text-semibold">Numero Ruc</span>
-												<br>
-												<small class="text-muted">Last 7 days : 34,553k</small>
-											</td>
-										</tr>
-										<tr>
-											<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
-											<td>
-												<span class="text-semibold">Fecha de inicio de actividades</span>
-												<br>
-												<small class="text-muted">Last 7 days : 34,553k</small>
-											</td>
-										</tr>
-										<tr>
-											<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
-											<td>
-												<span class="text-semibold">Fecha de cese de actividades</span>
-												<br>
-												<small class="text-muted">Last 7 days : 34,553k</small>
-											</td>
-										</tr>
-										<tr>
-											<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
-											<td>
-												<span class="text-semibold">Fecha reinicio de actividades</span>
-												<br>
-												<small class="text-muted">Last 7 days : 34,553k</small>
-											</td>
-										</tr>
-										<tr>
-											<td class="text-center"><span class="icon-wrap icon-wrap-sm icon-circle bg-mint"><i class="fa fa-mobile fa-lg"></i></span></td>
-											<td>
-												<span class="text-semibold">Fecha actualización</span>
-												<br>
-												<small class="text-muted">Last 7 days : 34,553k</small>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
 						</div>
-						<!--===================================================-->
-						<!--End Hover Rows-->
-			
+						<div class="tab-pane fade in" ng-class="{ active: isSet(2)}" ng-show="isSet(2)">
+							<h4 class="text-thin">Second Tab Content</h4>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+			<!--===================================================-->
+			<!--End Panel with Tabs-->
+		
 
 	</div>
 </div>

@@ -20,7 +20,7 @@ class email{
 		return $mail->Send() ;
 	}
 	function url_(){
-		return 'http://www.nextbook.ec/';
+		return 'http://www.promodaatuntaqui.com/';
 	}
 }
 

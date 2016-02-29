@@ -1,3 +1,12 @@
+<?php 
+	// procesos session
+	session_start();
+	if (isset($_SESSION['modelo'])) {
+	  // $_SESSION['modelo'] = 0;
+		header('Location: ../');
+	  //con session
+	}
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,6 +14,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Promoda</title>
+    <link rel="icon" type="image/png" href="../../img/logo.png">
 
 
     <!--STYLESHEET-->
@@ -37,39 +47,12 @@
     <link href="../../css/demo/nifty-demo.min.css" rel="stylesheet">
     <link href="../../css/color.css" rel="stylesheet">
 
-
-
-
     <!--SCRIPT-->
     <!--=================================================-->
 
     <!--Page Load Progress Bar [ OPTIONAL ]-->
     <link href="../../plugins/pace/pace.min.css" rel="stylesheet">
     <script src="../../plugins/pace/pace.min.js"></script>
-
-
-    
-	<!--
-
-	REQUIRED
-	You must include this in your project.
-
-	RECOMMENDED
-	This category must be included but you may modify which plugins or components which should be included in your project.
-
-	OPTIONAL
-	Optional plugins. You may choose whether to include it in your project or not.
-
-	DEMONSTRATION
-	This is to be removed, used for demonstration purposes only. This category must not be included in your project.
-
-	SAMPLE
-	Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
-
-
-	Detailed information and more samples can be found in the document.
-
-	-->
 		
 
 </head>
@@ -96,84 +79,39 @@
 			</div>
 		</div>
 		
-		<!-- REGISTRATION FORM -->
+		<!-- LOGIN FORM -->
 		<!--===================================================-->
 		<div class="cls-content">
-			<div class="cls-content-lg panel">
+			<div class="cls-content-sm panel">
 				<div class="panel-body">
-					<p class="pad-btm">Crear Cuenta</p>
-					<form id="form-data" name="form-data">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="form-group">
-									<div class="input-group">
-										<div class="input-group-addon"><i class="fa fa-male"></i></div>
-										<input type="text" class="form-control" placeholder="Nombre Completo" name="txt_1" value="Deivid Criollo">
-										<input name="form-data" type="hidden">
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="input-group">
-										<div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-										<input type="text" class="form-control" placeholder="E-mail" name="txt_correo" value="deividscriollo@gmail.com">
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<div class="input-group">
-										<div class="input-group-addon"><i class="fa fa-user"></i></div>
-										<input type="text" class="form-control" placeholder="Ruc Empresa" name="txt_ruc" value="1002132759001">
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="input-group">
-										<div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
-										<input type="password" class="form-control" placeholder="Password" name="txt_4" value="roeee">
-									</div>
-								</div>
+					<p class="pad-btm">Iniciar sesión en su cuenta</p>
+					<form id="form-data">
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon"><i class="fa fa-user"></i></div>
+								<input type="text" id="txt_usuario" name="txt_usuario" class="form-control" placeholder="Correo Electrónico">
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-8 text-left checkbox">
-								<div class="form-group">
-									<div class="col-lg-9">
-										<div class="checkbox">
-											<label class="form-checkbox form-icon">
-												<input type="checkbox" name="txt_5" value="accept" checked />
-													Tienes que aceptar los 
-													<a href="../terminos/" class="blue">
-														términos y políticas
-													</a>
-											</label>
-										</div>
-									</div>
-								</div>
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
+								<input type="password" id="txt_pass" name="txt_pass" class="form-control" placeholder="Password">
 							</div>
+						</div>
+						<div class="row pull-right">
 							<div class="col-xs-4">
 								<div class="form-group text-right">
-									<button class="btn btn-success text-uppercase" type="submit" name="obj-data">Guardar</button>
+								<button class="btn btn-success text-uppercase" type="submit">Entrar</button>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-sm-6">
-								<a href="../login/">
-									<button class="btn btn-primary btn-lg btn-block" type="button">
-										<i class="fa fa-unlock-alt"></i> Ya tienes una cuenta ? Ingresar
-									</button>
-								</a>
-							</div>
-							<div class="col-sm-6">
-								<a href="../restore/">
-									<button class="btn btn-primary btn-lg btn-block" type="button" >
-										<i class="fa  fa-key"></i> Se te olvidó tu contraseña ?
-									</button> 
-								</a>
-							</div>
-						</div>
+						
 					</form>
 				</div>
+			</div>
+			<div class="pad-ver">
+				<a href="../restore/" class="btn-link mar-rgt">Se te olvidó tu contraseña ?</a>
+				<a href="../register/" class="btn-link mar-lft">Crear cuenta <i class="fa fa-database"></i></a>
 			</div>
 		</div>
 		<!--===================================================-->	
